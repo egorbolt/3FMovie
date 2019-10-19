@@ -1,0 +1,98 @@
+/* 
+  Localizable.strings
+  3F Movie
+
+  Created by Anton Kovalenko on 09/08/2019.
+  Copyright © 2019 Anton Kovalenko. All rights reserved.
+*/
+
+// MARK: - Views
+"CollectionViewWithTitle.Button.ShowAll.Title" = "Показать все";
+
+// MARK: - TAB1 - Explore
+"ExploreViewController.TabbarItem.Title" = "Фильмы";
+"ExploreViewController.NavigationItem.Title" = "Фильмы";
+"ExploreViewController.TrendingSection.Title" = "В тренде";
+"ExploreViewController.NowPlayingSection.Title" = "В кино";
+"ExploreViewController.GenresSection.Title" = "Жанры";
+"ExploreViewController.PopularSection.Title" = "Популярное";
+"ExploreViewController.TopRatedSection.Title" = "Лучшeе";
+"ExploreViewController.UpcomingSection.Title" = "Скоро в кино";
+
+//MARK: - Common - Show All
+"ShowAllView.Title.Trending" = "В тренде";
+"ShowAllView.Title.NowPlaying" = "Сейчас в кино";
+"ShowAllView.Title.Popular" = "Популярное";
+"ShowAllView.Title.TopRated" = "Лучшее";
+"ShowAllView.Title.Upcoming" = "Скоро в кино";
+"ShowAllView.Title.Actors" = "Актёры";
+"ShowAllView.Title.Crew" = "Создатели";
+"ShowAllView.Title.Trailers" = "Трейлеры";
+
+//MARK: - TAB3 - Random Movie
+"RandomMovieViewController.Title" = "Случайный фильм";
+"RandomMovieViewController.NextMovieButton" = "Следующий фильм";
+
+//MARK: - Common - Person
+"PersonViewController.BornOn" = "Дата рождения: ";
+"PersonViewController.BornOnNOImformation" = "Дата рождения: нет информации ";
+"PersonViewController.From" = "Место рождения:";
+"PersonViewController.FromNoInformation" = "Место рождения: нет информации";
+"PersonViewController.Biography" = "Биография";
+"PersonViewController.Info" = "Информация";
+"PersonViewController.Movies" = "Фильмы";
+"PersonViewController.Images" = "Фотографии";
+
+// MARK: - MoviesList - SystemListID
+"MoviesListManager.SystemListID.Favorites" = "Избранное";
+"MoviesListManager.SystemListID.WatchLater" = "Посмотреть позже";
+
+// MARK: - Common - Show All
+
+// MARK: - Common - MovieVC
+"MovieVC.CollectionView.Actors.warning" = "Нет актеров";
+"MovieVC.CollectionView.Crew.warning" = "Нет создателей";
+"MovieVC.CollectionView.Trailers.warning" = "Нет трейлеров";
+"MovieVC.View.Genres.warning" = "Жанры неизвестны";
+"MovieVC.View.title" = "О фильме";
+"MovieVC.Time.minutes" = " мин.";
+
+// MARK: - Common WebPlayerVC
+"WebPlayerVC.Button.Back" = "Назад";
+
+// MARK: - TAB3 - Random Movie
+
+// MARK: - TAB4 - Lists
+"ListsVC.View.title" = "Списки";
+"ListsVC.Button.Back" = "Назад";
+"ListsVC.View.Button.AddList" = "Добавить новый список";
+"ListsVC.Button.AddList.Alert.title" = "Создание нового списка";
+"ListsVC.Button.AddList.Alert.message" = "Введите название списка.";
+"ListsVC.Button.AddList.Alert.OK" = "ОК";
+"ListsVC.Button.AddList.Alert.Cancel" = "Отмена";
+"ListsVC.Button.DeleteList.Alert.title" = "Удаление списка";
+"ListsVC.Button.DeleteList.Alert.message" = "Вы уверены?";
+"ListsVC.Button.DeleteList.Alert.Yes" = "Да";
+"ListsVC.Button.DeleteList.Alert.No" = "Нет";
+"ListsVC.Button.DeleteList.ApprovingAlert.title" = "Удаление непустого списка";
+"ListsVC.Button.DeleteList.ApprovingAlert.message" = "Удаляемый список не пуст. Вы действительно уверены?";
+"ListsVC.View.Modal.AddingMovie.Alert.title" = "Предупреждение";
+"ListsVC.View.Modal.AddingMovie.Alert.message" = "Добавляемый фильм уже есть в данном списке.";
+"ListsVC.View.Modal.AddingMovie.Alert.OK" = "ОК";
+"ListsVC.View.Error.Alert.title" = "Ошибка";
+"ListsVC.View.Error.Alert.message" = "При работе со списками что-то реально пошло не так.";
+"ListsVC.View.Error.Alert.OK" = "Хорошо (нет)";
+
+// MARK: - TAB4 - MovieListVC
+"MovieListVC.NavBar.RightButton.title" = "Изменить имя";
+"MovieListVC.View.Error.Alert.title" = "Ошибка";
+"MovieListVC.View.Error.Alert.message" = "При работе со списком фильмов что-то реально пошло не так.";
+"MovieListVC.View.Error.Alert.OK" = "Хорошо (нет)";
+"MovieListVC.NavBar.RightButton.Action.Alert.title" = "Изменение имени списка";
+"MovieListVC.NavBar.RightButton.Action.Alert.message" = "Введите новое название списка";
+"MovieListVC.NavBar.RightButton.Action.Alert.OK" = "ОК";
+"MovieListVC.NavBar.RightButton.Action.Alert.Cancel" = "Отмена";
+"MovieListVC.Button.DeleteList.Alert.title" = "Удаление фильма";
+"MovieListVC.Button.DeleteList.Alert.message" = "Вы действительно уверены?";
+"MovieListVC.Button.DeleteList.Alert.Yes" = "Да";
+"MovieListVC.Button.DeleteList.Alert.No" = "Нет";

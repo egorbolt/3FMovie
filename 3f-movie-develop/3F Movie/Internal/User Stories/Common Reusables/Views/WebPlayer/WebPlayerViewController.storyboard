@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Web Player View Controller-->
+        <scene sceneID="DZY-jQ-sSu">
+            <objects>
+                <viewController storyboardIdentifier="WebPlayerViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="FIZ-6i-45O" customClass="WebPlayerViewController" customModule="_F_Movie" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="762-uE-U49">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="51l-vr-2kk" customClass="WKYTPlayerView">
+                                <rect key="frame" x="0.0" y="5" width="414" height="896"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="51l-vr-2kk" firstAttribute="centerX" secondItem="wkc-ot-kML" secondAttribute="centerX" id="DRX-1j-aZO"/>
+                            <constraint firstItem="51l-vr-2kk" firstAttribute="height" secondItem="762-uE-U49" secondAttribute="height" id="IGx-EI-oXN"/>
+                            <constraint firstItem="51l-vr-2kk" firstAttribute="centerY" secondItem="wkc-ot-kML" secondAttribute="centerY" id="PRx-Y7-W7a"/>
+                            <constraint firstItem="51l-vr-2kk" firstAttribute="leading" secondItem="wkc-ot-kML" secondAttribute="leading" id="cyX-n4-td9"/>
+                            <constraint firstItem="51l-vr-2kk" firstAttribute="width" secondItem="762-uE-U49" secondAttribute="width" id="erv-2D-2I5"/>
+                            <constraint firstItem="51l-vr-2kk" firstAttribute="trailing" secondItem="wkc-ot-kML" secondAttribute="trailing" id="ttz-9C-nsv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wkc-ot-kML"/>
+                    </view>
+                    <connections>
+                        <outlet property="uiWebView" destination="51l-vr-2kk" id="u7w-eL-mCw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PEJ-bH-bx9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="276.81159420289856" y="-262.5"/>
+        </scene>
+    </scenes>
+</document>

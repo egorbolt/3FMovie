@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="GenresCell" customModule="_F_Movie" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="156" height="61"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="156" height="61"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AiV-id-CDz">
+                        <rect key="frame" x="0.0" y="0.0" width="156" height="61"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Documentary" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F5h-tU-IOs">
+                        <rect key="frame" x="10" y="5" width="136" height="51"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="F5h-tU-IOs" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="6mu-II-6KS"/>
+                <constraint firstItem="AiV-id-CDz" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="IHD-z5-fgw"/>
+                <constraint firstAttribute="trailing" secondItem="F5h-tU-IOs" secondAttribute="trailing" constant="10" id="QDs-tt-xwO"/>
+                <constraint firstItem="AiV-id-CDz" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="XVy-5w-lck"/>
+                <constraint firstAttribute="trailing" secondItem="AiV-id-CDz" secondAttribute="trailing" id="ZYa-A3-yIf"/>
+                <constraint firstAttribute="bottom" secondItem="F5h-tU-IOs" secondAttribute="bottom" constant="5" id="hbN-Fl-6if"/>
+                <constraint firstAttribute="bottom" secondItem="AiV-id-CDz" secondAttribute="bottom" id="lVM-Pp-JTy"/>
+                <constraint firstItem="F5h-tU-IOs" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="nDU-NW-0qw"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="KF9-UH-96E"/>
+            <size key="customSize" width="156" height="61"/>
+            <connections>
+                <outlet property="background" destination="AiV-id-CDz" id="Tg4-sD-h8g"/>
+                <outlet property="genreNameLabel" destination="F5h-tU-IOs" id="aPw-P5-9Y4"/>
+            </connections>
+            <point key="canvasLocation" x="17.39130434782609" y="117.52232142857142"/>
+        </collectionViewCell>
+    </objects>
+</document>

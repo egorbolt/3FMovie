@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zj2-RU-Hda">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="MLb-VS-PaW">
+            <objects>
+                <navigationController id="zj2-RU-Hda" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="piA-RX-oSl">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="KP4-Gc-Wc4" kind="relationship" relationship="rootViewController" id="vXD-Gk-uYx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XG2-8n-ZVa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-852" y="201"/>
+        </scene>
+        <!--Lists-->
+        <scene sceneID="TTf-jh-G0t">
+            <objects>
+                <viewController storyboardIdentifier="ListsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="KP4-Gc-Wc4" customClass="ListsViewController" customModule="_F_Movie" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MKz-0z-gpD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="U65-dh-wsg">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="761"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e2K-9h-oD7">
+                                <rect key="frame" x="41.5" y="769" width="331" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="if8-xG-R0A"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Add new list"/>
+                                <connections>
+                                    <action selector="didTouchAddListButton:" destination="KP4-Gc-Wc4" eventType="touchUpInside" id="iqr-Fi-5v7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="U65-dh-wsg" firstAttribute="trailing" secondItem="VSX-QJ-jPl" secondAttribute="trailing" id="UDg-vN-fsm"/>
+                            <constraint firstItem="e2K-9h-oD7" firstAttribute="centerX" secondItem="VSX-QJ-jPl" secondAttribute="centerX" id="Xw3-M3-AeC"/>
+                            <constraint firstItem="e2K-9h-oD7" firstAttribute="width" secondItem="MKz-0z-gpD" secondAttribute="width" multiplier="0.8" id="b55-aA-U6h"/>
+                            <constraint firstItem="e2K-9h-oD7" firstAttribute="bottom" secondItem="VSX-QJ-jPl" secondAttribute="bottom" id="bVb-In-7Fw"/>
+                            <constraint firstItem="U65-dh-wsg" firstAttribute="top" secondItem="MKz-0z-gpD" secondAttribute="top" id="eO9-iF-G26"/>
+                            <constraint firstItem="U65-dh-wsg" firstAttribute="leading" secondItem="VSX-QJ-jPl" secondAttribute="leading" id="fYR-kp-faL"/>
+                            <constraint firstItem="U65-dh-wsg" firstAttribute="bottom" secondItem="VSX-QJ-jPl" secondAttribute="bottom" constant="-52" id="pyj-Y9-JxB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="VSX-QJ-jPl"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Lists" image="Tab Bar Icons/Lists" id="oPD-pe-ANs"/>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="l9e-CV-eKc"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="buttonAddList" destination="e2K-9h-oD7" id="c47-XV-Xyn"/>
+                        <outlet property="tableView" destination="U65-dh-wsg" id="5r9-M6-bvK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v2s-sr-5I1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="79.710144927536234" y="180.80357142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Tab Bar Icons/Lists" width="25" height="25"/>
+    </resources>
+</document>

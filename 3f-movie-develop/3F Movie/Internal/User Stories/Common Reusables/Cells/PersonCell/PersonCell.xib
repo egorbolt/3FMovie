@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="xcr-yd-Rcy" userLabel="Person Cell" customClass="PersonCell" customModule="_F_Movie" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="128" height="240"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="128" height="240"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TpS-iA-5am">
+                        <rect key="frame" x="0.0" y="0.0" width="128" height="240"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Rq0-RW-PsD" userLabel="Person Image View">
+                                <rect key="frame" x="0.0" y="0.0" width="128" height="144"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zoc-Ii-TYa" userLabel="Person Name Label">
+                                <rect key="frame" x="0.0" y="152" width="128" height="50"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Swv-wc-H38" userLabel="Person Position Label">
+                                <rect key="frame" x="0.0" y="198" width="128" height="38"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Zoc-Ii-TYa" firstAttribute="top" secondItem="Rq0-RW-PsD" secondAttribute="bottom" constant="8" id="3WU-qS-2Lf"/>
+                            <constraint firstItem="Swv-wc-H38" firstAttribute="top" secondItem="Zoc-Ii-TYa" secondAttribute="bottom" constant="-4" id="7eP-cq-vmP"/>
+                            <constraint firstItem="Zoc-Ii-TYa" firstAttribute="height" secondItem="TpS-iA-5am" secondAttribute="height" multiplier="0.1" constant="26" id="8vT-Tk-GWK"/>
+                            <constraint firstItem="Rq0-RW-PsD" firstAttribute="top" secondItem="TpS-iA-5am" secondAttribute="top" id="G11-hh-djG"/>
+                            <constraint firstAttribute="bottom" secondItem="Swv-wc-H38" secondAttribute="bottom" constant="4" id="GC6-U7-7Rw"/>
+                            <constraint firstAttribute="trailing" secondItem="Rq0-RW-PsD" secondAttribute="trailing" id="NKO-ip-Leu"/>
+                            <constraint firstItem="Rq0-RW-PsD" firstAttribute="height" secondItem="TpS-iA-5am" secondAttribute="height" multiplier="0.6" id="R9s-57-KrV"/>
+                            <constraint firstItem="Rq0-RW-PsD" firstAttribute="leading" secondItem="TpS-iA-5am" secondAttribute="leading" id="Ssq-av-wT6"/>
+                            <constraint firstAttribute="trailing" secondItem="Zoc-Ii-TYa" secondAttribute="trailing" id="Z9P-Qi-Ubi"/>
+                            <constraint firstItem="Swv-wc-H38" firstAttribute="leading" secondItem="TpS-iA-5am" secondAttribute="leading" id="j8O-gd-EIS"/>
+                            <constraint firstItem="Zoc-Ii-TYa" firstAttribute="leading" secondItem="TpS-iA-5am" secondAttribute="leading" id="pgw-iL-JdH"/>
+                            <constraint firstAttribute="trailing" secondItem="Swv-wc-H38" secondAttribute="trailing" id="tSk-Qb-rzN"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="TpS-iA-5am" firstAttribute="leading" secondItem="xcr-yd-Rcy" secondAttribute="leading" id="MHf-Je-ry4"/>
+                <constraint firstAttribute="trailing" secondItem="TpS-iA-5am" secondAttribute="trailing" id="afP-4o-IKa"/>
+                <constraint firstAttribute="bottom" secondItem="TpS-iA-5am" secondAttribute="bottom" id="dxW-fG-4Lx"/>
+                <constraint firstItem="TpS-iA-5am" firstAttribute="centerX" secondItem="1Yh-oz-IPN" secondAttribute="centerX" id="oeh-j8-b2D"/>
+                <constraint firstItem="TpS-iA-5am" firstAttribute="top" secondItem="xcr-yd-Rcy" secondAttribute="top" id="pBZ-DP-gah"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="1Yh-oz-IPN"/>
+            <size key="customSize" width="85" height="155"/>
+            <connections>
+                <outlet property="imageView" destination="Rq0-RW-PsD" id="hOK-f7-GuA"/>
+                <outlet property="labelPersonName" destination="Zoc-Ii-TYa" id="fU2-ec-mL2"/>
+                <outlet property="labelPersonPosition" destination="Swv-wc-H38" id="pVA-2q-B1f"/>
+            </connections>
+            <point key="canvasLocation" x="-655.07246376811599" y="-234.375"/>
+        </collectionViewCell>
+    </objects>
+</document>

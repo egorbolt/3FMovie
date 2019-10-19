@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NowPlayingSection" customModule="_F_Movie" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="lsy-xT-AVK"/>
+                <outlet property="sectionTitleLabel" destination="Zgh-pC-0HL" id="cjM-cN-3bT"/>
+                <outlet property="showAllButton" destination="MLM-xi-ksy" id="h7F-QG-2gD"/>
+                <outlet property="stackView" destination="5Gf-Do-VzZ" id="iNv-tX-AOQ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="564" height="340"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6yI-L6-FJ1">
+                    <rect key="frame" x="0.0" y="0.0" width="564" height="42.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Now Playing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zgh-pC-0HL">
+                            <rect key="frame" x="20" y="7.5" width="133.5" height="27.5"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MLM-xi-ksy">
+                            <rect key="frame" x="484" y="6.5" width="60" height="30"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                            <state key="normal" title="Show all">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Zgh-pC-0HL" firstAttribute="leading" secondItem="6yI-L6-FJ1" secondAttribute="leading" constant="20" id="Cxr-4h-xUq"/>
+                        <constraint firstAttribute="height" constant="42.5" id="K02-5E-nOf"/>
+                        <constraint firstAttribute="trailing" secondItem="MLM-xi-ksy" secondAttribute="trailing" constant="20" id="RSs-IP-VD2"/>
+                        <constraint firstItem="MLM-xi-ksy" firstAttribute="centerY" secondItem="6yI-L6-FJ1" secondAttribute="centerY" id="nao-er-6Eo"/>
+                        <constraint firstItem="Zgh-pC-0HL" firstAttribute="centerY" secondItem="6yI-L6-FJ1" secondAttribute="centerY" id="qkv-w9-X8I"/>
+                    </constraints>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="5Gf-Do-VzZ">
+                    <rect key="frame" x="0.0" y="42.5" width="564" height="297.5"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nhe-Og-ri9" customClass="NowPlayingMovie" customModule="_F_Movie" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="564" height="297.5"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="nhe-Og-ri9" secondAttribute="height" multiplier="16:9" id="Tab-Dx-PJo"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="6yI-L6-FJ1" secondAttribute="trailing" id="1Qg-El-s4T"/>
+                <constraint firstAttribute="trailing" secondItem="5Gf-Do-VzZ" secondAttribute="trailing" id="A9f-gC-rlO"/>
+                <constraint firstItem="5Gf-Do-VzZ" firstAttribute="top" secondItem="6yI-L6-FJ1" secondAttribute="bottom" id="E0w-RA-Yrp"/>
+                <constraint firstItem="6yI-L6-FJ1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="OQz-hC-vGg"/>
+                <constraint firstItem="6yI-L6-FJ1" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="WlS-gM-FOP"/>
+                <constraint firstAttribute="bottom" secondItem="5Gf-Do-VzZ" secondAttribute="bottom" id="fJq-B9-n2j"/>
+                <constraint firstItem="6yI-L6-FJ1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="pFb-QL-2jx"/>
+                <constraint firstItem="5Gf-Do-VzZ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="utL-P3-dUe"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="69.565217391304358" y="379.6875"/>
+        </view>
+    </objects>
+</document>
